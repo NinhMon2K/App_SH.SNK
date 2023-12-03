@@ -8,10 +8,12 @@ import "v-contextmenu/dist/themes/default.css";
 const app = createApp(App);
 import {useComponents} from "@/assets/js/commons/globalComponents";
 import {register} from "@/assets/js/commons/globalPopup";
+
 //Style SCSS
 import "@/assets/scss/font.scss";
 import "@/assets/scss/icon.scss";
 import "@/assets/scss/app.scss";
+import "@/assets/images/fontawesome-free-6.5.1-web/css/all.css"
 //Khai báo router
 import router from "@/routers/router.js";
 useComponents(app)

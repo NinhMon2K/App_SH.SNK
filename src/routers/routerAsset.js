@@ -4,6 +4,6 @@ export default [
     name: "assetPage",
     component: () => import("@/views/assetQLTS"),
     meta: {},
-  
+
   },
 ];

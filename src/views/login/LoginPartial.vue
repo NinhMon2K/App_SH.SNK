@@ -135,7 +135,7 @@ export default {
           localStorage.setItem("user_name", res.username);
           // document.cookie = `_token=${res.token};secure`;
           proxy.isLoading = false;
-          proxy.$router.push("/asset");
+          proxy.$router.push("/dashboard");
         } else {
           console.log(proxy.titleErrValidate);
           console.log(proxy.isShowVError);

@@ -29,7 +29,7 @@
               ]"
               @click.prevent="() => clickMenu(item)"
             >
-              <div :class="['app-icon', item.icon]"></div>
+              <div :class="['app-icon', item.icon]" :style="item.color"></div>
               <span class="text-menu">{{ item.text }}</span>
               <div
                 class="arrow-menu misa-icon app-icon"
@@ -221,8 +221,9 @@ export default {
         {
           itemID: 1,
           path: "/dashboard",
-          icon: "",
+          icon: "fas fa-tachometer-alt",
           text: "Tổng quan",
+          color: "color: #11151d;",
           arrow: "",
           title: "Tổng quan",
           childrens: [],
@@ -230,7 +231,8 @@ export default {
         {
           itemID: 2,
           path: "/bookingRequest",
-          icon: "ic-car",
+          icon: "fas fa-ship fa-xs",
+          color: "color: #11151d;",
           text: "Yêu cầu đặt tàu",
           arrow: "",
           title: "Yêu cầu đặt tàu",
@@ -239,30 +241,32 @@ export default {
         },
         {
           itemID: 3,
-          path: "ic-overview",
-          icon: "ic-asset",
+          path: "",
+          icon: "fas fa-file-invoice fa-xs",
           text: "Thống kê",
           arrow: "ic-angle-down",
           title: "Thống kê",
+          color: "color: #11151d;",
           childrens: [
             {
               itemID: 3,
               path: "/voucher",
-              text: "Ghi tăng",
+              text: "Công nợ",
               arrow: "",
             },
             {
               itemID: 3,
               path: "",
-              text: "Thay đổi thông tin",
+              text: "Hủy yêu cầu",
               arrow: "",
             },
           ],
         },
         {
           itemID: 4,
-          path: "",
-          icon: "ic-tools",
+          path: "/accountForwarder",
+          icon: "fas fa-dolly-flatbed fa-xs",
+          color: "color: #11151d;",
           text: "Nhà vận chuyển",
           arrow: "ic-angle-down",
           title: "Nhà vận chuyển",
@@ -305,7 +309,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/scss/layouts/the_sidebar.scss";
 .activeChildrens {
-  background-color: #48586c !important;
+  background-color: #f4f7ff !important;
   opacity: 1 !important;
 }
 </style>

@@ -3,6 +3,7 @@
     :style="styles"
     :class="[cls, styleAlign]"
     v-if="config.type != ColumnType.Action || config.position == 'relative'"
+    class="border_td"
   >
     <div class="td-inner check-box_input" ref="td">
       <template v-if="config.type == ColumnType.Checkbox">
@@ -362,6 +363,9 @@ export default {
 </script>
 
 <style lang="scss" scope="">
+.border_td{
+  border-right: 1px solid #ccc;
+}
 .action-group {
   display: flex;
   justify-content: center;
@@ -407,7 +411,7 @@ input[type="checkbox"] {
 td {
   padding: 8px;
   height: 39px;
-  border-right: 1px solid #ccc;
+  /* border-right: 1px solid #ccc; */
 }
 th {
   padding: 8px;

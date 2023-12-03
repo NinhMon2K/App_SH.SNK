@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import routerAsset from "./routerAsset";
 import routerReport from "./routerReport";
 import LoginView from "./routerLoginPartial";
 import routerVoucher from "./routerVoucher";
 import routerDashboard from "./routerDashboard";
 import routerBookingRequest from "./routerBookingRequest";
+import routerAccountForwarder from "./routerAccountForwarder";
 const routes = [
   {
     path:"/login",
@@ -13,7 +13,7 @@ const routes = [
   {
     path: "",
     component: () => import("@/components/layouts/TheMain.vue"),
-    children: [...routerAsset, ...routerReport,...routerVoucher,...routerDashboard,...routerBookingRequest],
+    children: [...routerDashboard, ...routerReport,...routerVoucher,...routerBookingRequest,...routerAccountForwarder],
   },
 ];
 

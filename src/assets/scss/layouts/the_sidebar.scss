@@ -178,19 +178,19 @@
 .sidebar__sub-menu {
   white-space: nowrap;
   position: relative;
-  background-color: #33455b;
+  background-color: #f4f7ff;
   color: #ffffff;
   margin-top: 1px;
   border-radius: 10px;
   .sidebar-sub__group {
     position: relative;
-    background-color: #33455b;
+    background-color: #f4f7ff;
     color: #ffffff;
     border-radius: 4px;
     .sidebar-sub {
       position: relative;
-      background-color: #33455b;
-      color: #ffffff;
+      background-color: #f4f7ff;
+      color: #f4f7ff;
       display: flex;
       height: 40px;
       width: 100%;
@@ -209,16 +209,16 @@
         &:focus,
         &:focus-within,
         &:active{
-          background-color: #48586c;
+          background-color: #f4f7ff;
           opacity: 1;
         }
         &:hover {
-          background-color: #48586c;
+          background-color: #f4f7ff;
           opacity: 1;
         }
         .text-menu {
           white-space: nowrap;
-          color: white;
+          color: #000;
           flex: 1;
           font-size: 13px;
         }

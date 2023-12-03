@@ -7,32 +7,31 @@
       <div class="tool-header">
         <div class="tool notification">
           <v-tooltip content="Thông báo" placement="bottom">
-            <div class="app-icon ic-notification"></div>
+            <i class="app-icon app-icon-bell fas fa-bell fa-xs"></i>
           </v-tooltip>
         </div>
         <div class="tool tf-home">
           <v-tooltip content="Lưới" placement="bottom">
-            <div class="app-icon ic-view-grid"></div>
+            <i class="app-icon-bell fas fa-th"></i>
           </v-tooltip>
         </div>
         <div class="tool help">
           <v-tooltip content="Trợ giúp" placement="bottom">
-            <div class="app-icon ic-question-message"></div>
+            <i class="app-icon-bell fas fa-question-circle"></i>
           </v-tooltip>
         </div>
       </div>
       <div class="user-header">
         <div class="c-2 avatar">
           <v-tooltip content="Tài khoản" placement="bottom">
-            <div class="app-icon ic-user"></div>
+            <i class="app-icon-bell fas fa-user-circle user-icon"></i>
           </v-tooltip>
         </div>
         <div class="c-2 more">
           <v-tooltip content="Xuống" placement="bottom">
-            <div
-              class="app-icon ic-arow"
-              @click="isShowUserInfo = !isShowUserInfo"
-            ></div>
+            <div @click="isShowUserInfo = !isShowUserInfo">
+              <i class="app-icon-bell fas fa-caret-down drop-icon"></i>
+            </div>
           </v-tooltip>
         </div>
         <div class="header-user" v-if="isShowUserInfo">
@@ -139,4 +138,16 @@ export default {
 
 <style lang="scss" scope>
 @import "@/assets/scss/layouts/the_header.scss";
+.app-icon-bell {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  color: #fff;
+}
+.user-icon {
+  margin-top: 1px;
+}
+.drop-icon {
+  margin-top: 1px;
+}
 </style>

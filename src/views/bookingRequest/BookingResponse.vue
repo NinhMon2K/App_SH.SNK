@@ -150,6 +150,7 @@
                 :columns="columns"
                 :allData="dataBookingReponse"
                 :selectedCol="false"
+                :selectedRow="true"
                 :disableFooter="true"
                 ref="table"
               >
