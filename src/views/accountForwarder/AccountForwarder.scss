@@ -1,0 +1,83 @@
+.account-forwarder-page {
+    .primary-hover{
+   background-color: red;
+    }
+    overflow: hidden;
+    .contrainer-toolbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 13px 0;
+      .toobar-left {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container__search {
+          display: flex;
+          .form-group__left{
+            margin-right: 30px;
+          }
+        }
+        .filter-combobox {
+          max-width: 218px;
+          margin-left: 11px;
+        }
+      }
+      .toolbar-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn:last-child {
+          margin-right: 2px;
+        }
+      }
+    }
+    .app-icon {
+      &.ic-add {
+        margin-left: -3px;
+      }
+    }
+  }
+  #btn-export {
+    background-color: #fff;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-left: 11px;
+    &:hover {
+      cursor: pointer;
+      background-color: #eeeeee;
+    }
+  }
+  #btn-delete {
+    background-color: #fff;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    margin-left: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    &:hover {
+      cursor: pointer;
+      background-color: #eeeeee;
+    }
+  }
+  .ic-export {
+    margin: 0;
+  }
+  .ic-delete__toolbar {
+    margin: 0;
+  }
+  .ic-add {
+  }
+  .toobar-left {
+    .mg-9 {
+      margin: 0 !important;
+      .error-message {
+        display: none !important;
+      }
+    }
+  }
+  

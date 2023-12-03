@@ -95,11 +95,11 @@
   <v-grid
     :columns="columns"
     :allData="allData"
-    :selectedCol="true"
     :dataTotal="dataTotal"
     v-model:active="active"
     :disableFooter="true"
-    ref="table"
+     ref="table"
+     :selectedCol="true"
     @deleteOnKey="handleShowMessBox"
     v-model:selectedData="dataSelected"
     @handleEventTable="handleEventTable"

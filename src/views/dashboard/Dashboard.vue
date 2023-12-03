@@ -10,6 +10,7 @@
             hasLabel
             positionLabel
             rightIcon="ic-date"
+            rowDisplay="true"
             topIcon="ic-angle_up"
             bottomIcon="ic-angle_down"
             :radius="true"
@@ -24,6 +25,7 @@
             hasLabel
             tabindex="109"
             rightIcon="ic-date"
+             rowDisplay="true"
             topIcon="ic-angle_up"
             bottomIcon="ic-angle_down"
             :radius="true"

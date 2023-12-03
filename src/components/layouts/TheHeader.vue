@@ -7,7 +7,8 @@
       <div class="tool-header">
         <div class="tool notification">
           <v-tooltip content="Thông báo" placement="bottom">
-            <i class="app-icon app-icon-bell fas fa-bell fa-xs"></i>
+            <div class="app-icon app-icon-bell fas fa-bell fa-xs"></div>
+            <div class="number_bell">0</div>
           </v-tooltip>
         </div>
         <div class="tool tf-home">
@@ -149,5 +150,19 @@ export default {
 }
 .drop-icon {
   margin-top: 1px;
+}
+.number_bell {
+  position: absolute;
+  top: 24px;
+  font-size: 15px;
+  color: red;
+  background-color: #fff;
+  width: 18px;
+  border-radius: 50%;
+  left: 4px;
+  font-weight: 800;
+}
+.notification {
+  position: relative;
 }
 </style>

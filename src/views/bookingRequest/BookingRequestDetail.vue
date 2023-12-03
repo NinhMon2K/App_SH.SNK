@@ -257,6 +257,25 @@
               >
               </v-button>
             </div>
+            <div>
+              <v-grid
+                :columns="columns"
+                :allData="allData"
+                :dataTotal="dataTotal"
+                v-model:active="active"
+                :disableFooter="true"
+                ref="table"
+                :selectedCol="true"
+                @deleteOnKey="handleShowMessBox"
+                v-model:selectedData="dataSelected"
+                @handleEventTable="handleEventTable"
+                @handle-close="handlClosePopup"
+                @show-message="handleShowMess"
+                @currentPage="handleTotalPage"
+                @changeTabView="handleChangeTab"
+              >
+              </v-grid>
+            </div>
           </div>
         </div>
         <div class="footer-popup">

@@ -29,10 +29,11 @@
     align-items: center;
     .form-horizontal{
         display: flex;
-        .form-group__left{
-            margin-right: 10px;
-        }
+       
     }
+}
+.form-group__left{
+  margin-right: 30px;
 }
 .dashboard-center_container {
   display: flex;

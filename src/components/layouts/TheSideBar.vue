@@ -262,6 +262,16 @@ export default {
             },
           ],
         },
+        // {
+        //   itemID: 4,
+        //   path: "/accountForwarder",
+        //   icon: "fas fa-dolly-flatbed fa-xs",
+        //   color: "color: #11151d;",
+        //   text: "Tài khoản",
+        //   arrow: "ic-angle-down",
+        //   title: "Tài khoản",
+        //   childrens: [],
+        // },
         {
           itemID: 4,
           path: "/accountForwarder",
