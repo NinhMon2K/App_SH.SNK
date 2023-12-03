@@ -1,0 +1,128 @@
+﻿.login-partial {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+  background: url("@/assets/images/Image_backgroud_login.jpg") no-repeat fixed center;
+  background-size: cover;
+
+  .login-page {
+    width: 770px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .login-container {
+      position: relative;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+
+      .login-content {
+        width: 770px;
+        height: 560px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 16px 30px rgba(0, 0, 0, 0.16);
+
+        .content--left {
+          flex: 1;
+          height: 100%;
+          background-image: url("@/assets/images/login-img.png");
+          border-bottom-left-radius: 8px;
+          background-repeat: no-repeat;
+        }
+        .content--right {
+          flex: 1;
+          height: 100%;
+          display: flex;
+          padding: 12px;
+          justify-content: center;
+          flex-direction: column;
+          .login_partial--top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 148px;
+            margin-top: -55px;
+
+            .login-logo {
+              background: top/contain url("@/assets/images/shg-logo.png")
+                no-repeat;
+              width: 200px;
+              height: 143px;
+            }
+            .login-title {
+              font-size: 15px;
+            }
+            .login-form {
+              margin-top: 20px;
+              width: 100%;
+              padding: 0px 34px;
+              .box_username {
+                  margin-bottom: 20px;
+                  position: relative;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+              }
+            }
+            .box_password {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+
+          .login_partial--bottom {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .box__forgot-password {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#btn_login {
+  width: 305px;
+  height: 44px;
+  background-color: #409eff;
+}
+.forgot-password {
+  font-size: 15px;
+  color: #1a73e8;
+  text-decoration: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+:deep() {
+  .el-input__wrapper {
+    height: 44px;
+    width: 305px;
+  }
+}
+.error-message {
+  color: red;
+  position: absolute;
+  font-size: 13px;
+  bottom: -19px;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}

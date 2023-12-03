@@ -1,0 +1,215 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  background-color: #3C8DBC ;
+  .left-header {
+    margin-left: 23px;
+    .title-page {
+      font-size: 13px;
+      font-weight: 700;
+    }
+  }
+  .right-header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .organization-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: #001031;
+      margin-right: 26px;
+    }
+    .tool-header {
+      display: flex;
+      .notification {
+        padding: 10px;
+      }
+      .tf-home {
+        padding: 10px;
+      }
+      .help {
+        padding: 10px;
+      }
+      .tool {
+        .app-icon {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .user-header {
+      display: flex;
+      margin-left: 10px;
+      .c-2 {
+        width: 24px;
+        height: 24px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .more {
+        margin-left: -3px;
+        margin-right: 20px;
+      }
+    }
+
+    .ctr-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(26, 164, 200, 0.2);
+      border-radius: 3px;
+      margin-right: 27px;
+      width: 112px;
+      height: 30px;
+      overflow: hidden;
+      input {
+        border: none;
+        width: 50px;
+        margin-left: 8px;
+
+        &::-webkit-inner-spin-button {
+          opacity: 1;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+// user info
+.header-user {
+  width: 186px;
+  height: 148px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+  right: 10px;
+  position: fixed;
+  top: 40px;
+  padding: 16px;
+  z-index: 99;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+  border: 1px solid #dddddd;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    width: 13px;
+    height: 14px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.02);
+    border: 1px solid #dddddd;
+    transform: rotate(45deg);
+
+    border-radius: 3px;
+    z-index: -1;
+  }
+  &::after {
+    background-color: #fff;
+    top: -7px;
+    z-index: 2;
+    border: 0;
+    right: 13px;
+  }
+  .user-name {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    width: 100%;
+    margin-top: -6px;
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+  .user-change_pass {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    .app-icon {
+      margin-right: 10px;
+    }
+    .text_user_info {
+      opacity: 0.5;
+      width: 100%;
+      text-align: left;
+      border-radius: 5px;
+      &:hover {
+        opacity: 1;
+        background-color: #f5f5f5;
+      }
+      a {
+        color: #000;
+        font-size: 13px;
+      }
+    }
+  }
+  .user-manage {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    .app-icon {
+      margin-right: 10px;
+    }
+    .text_user_info {
+      opacity: 0.5;
+      width: 100%;
+      border-radius: 5px;
+      text-align: left;
+      &:hover {
+        opacity: 1;
+        background-color: #f5f5f5;
+      }
+      a {
+        color: #000;
+        font-size: 13px;
+      }
+    }
+  }
+  .logout-user {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    border-radius: 4px;
+    &:hover {
+      background-color: #1aa4c8;
+      cursor: pointer;
+      .text_user_info {
+        color: #fff;
+      }
+    }
+    &:focus,
+    &:active {
+      background-color: #0582a2;
+    }
+    .app-icon {
+      margin-right: 10px;
+    }
+    .text_user_info {
+      a {
+        color: #000;
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+.input-date__field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  border: none !important;
+  .error-message {
+    color: red;
+    position: absolute;
+    font-size: 13px;
+    bottom: -19px;
+    // position: relative;
+    max-width: 100%;
+    text-overflow: ellipsis;
+  }
+  .text-label {
+    display: flex;
+    position: relative;
+    margin-bottom: 8px;
+    color: #000;
+    font-size: 13px;
+    cursor: pointer;
+    span {
+      font-size: 13px;
+      margin-left: 4px;
+      color: red;
+    }
+  }
+  &:focus-within,
+  &:hover {
+    .flex-row {
+      z-index: 2;
+      border: none;
+      .input-text {
+        //border: 1px solid #1492e6 !important;
+      }
+    }
+  }
+  &:hover {
+    .flex-row {
+      //  border: solid 1px #1aa4c8;
+    }
+  }
+  &:active {
+    .flex-row {
+      // border: solid 1px #1aa4c8;
+    }
+  }
+  &:focus {
+    .flex-row {
+      // border: solid 1px #1aa4c8;
+      outline: #d1edf4 3px solid;
+    }
+  }
+
+  .flex-row {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 2.5px;
+    border: none !important;
+    height: 36px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 13px;
+    position: relative;
+    &.input__error {
+      border-color: #e92e2e !important;
+      .input-text:hover,
+      .input-text:focus,
+      .input-text:focus-within {
+        border-color: #e92e2e !important;
+      }
+    }
+    .icon-filter {
+      .icon--left {
+        margin-left: 7px;
+        margin-top: -12px;
+      }
+      .app-icon {
+        border: none !important;
+
+        outline: 0;
+        padding: 0 6px;
+        position: absolute;
+      }
+    }
+
+    &:first-child {
+    }
+    .icon--left {
+      margin: 6px 8px 5px 6px;
+      border: none !important;
+    }
+    .input-text {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 13px;
+      padding-left: 10px;
+      padding-right: 14px;
+
+      &::placeholder {
+        font-style: italic;
+      }
+    }
+  }
+
+  .has-icon {
+    .input-text {
+      padding-left: 36px;
+    }
+  }
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+  display: none;
+  width: 100%;
+}
+.el-input__wrapper {
+  // height: 34px;
+  // border: 1px solid #afafaf;
+  // box-shadow: none !important;
+  // background: #fff url("@/assets/images/icons/datepicker-icon.png") no-repeat
+  //   240px 8px;
+  // cursor: pointer !important;
+}
+
+.el-input__wrapper {
+  border-radius: 2px;
+  border: 1px solid #afafaf;
+  height: 36px;
+  &:hover,
+  &:active,
+  &:focus-within {
+    border: 1px solid #53bad5 !important;
+  }
+}
+
+.el-input__wrapper:focus {
+  border: 1px solid #6fc6dc !important;
+}
+
+.el-input__wrapper:active {
+  border: 1px solid #c3c3c3 !important;
+}
+
+.el-input__prefix-inner {
+  display: none !important;
+}
+
+
+
+.datepicker--error .el-input__wrapper {
+  border: 1px solid red !important;
+}
+.el-input {
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  -ms-border-radius: 3px !important;
+  -o-border-radius: 3px !important;
+}
+.ic-date {
+  position: absolute;
+  right: 6px;
+  cursor: pointer;
+  margin-top: -12px;
+}
+.input__error {
+  .el-input {
+    .el-input__wrapper {
+      border: solid 1px red !important;
+    }
+  }
+}
+.input-date__field {
+  .flex-row {
+    .el-input {
+      .el-input__wrapper {
+        .el-input__suffix {
+          .el-input__suffix-inner {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

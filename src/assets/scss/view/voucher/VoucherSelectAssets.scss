@@ -1,0 +1,96 @@
+.model {
+    background-color: rgba(0, 0, 0, 0.55) !important;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    .form-asset {
+      position: relative;
+      width: 940px;
+      border-radius: 4px;
+      background-color: #fff;
+      padding-top: 20px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  
+      border-bottom-right-radius: 4px;
+      border-top-left-radius: 4px;
+      .header-popup {
+        display: flex;
+        border-bottom: 1px solid #E0E0E0;
+        justify-content: space-between;
+        .form-asset__title {
+          padding-left: 16px;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        .form-asset__close {
+          margin-right: 16px;
+          cursor: pointer;
+        }
+      }
+  
+      .content-popup {
+       border: none;
+       
+        .form-asset__body {
+        
+          display: flex;
+          flex-direction: column;
+          .form_group-search{
+            height: 62px;
+            display: flex;
+            align-items: center;
+            .box_search{
+                margin-left: 16px;
+                width: 285px;
+            }
+          }
+          .form_container--table{
+            height: 546.56px;
+          }
+        }
+          
+      }
+      .footer-popup {
+        height: 52px;
+        .form-asset__footer {
+          display: flex;
+          justify-content: end;
+          background-color: #E5E5E5;
+          height: 52px;
+          align-items: center;
+          padding: 0 16px;
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+          .btn {
+            min-width: 110px;
+            width: 110px;
+            margin-left: 10px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) ;
+          }
+        }
+      }
+    }
+  }
+  .grid-container{
+ border: none;
+    box-shadow: none;
+    .grid-view{
+      .grid-header{
+
+      }
+    }
+  }
+  table{
+    thead{
+      tr{
+        border: none !important;
+      }
+    }
+  }

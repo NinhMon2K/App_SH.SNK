@@ -1,0 +1,91 @@
+// color
+$primary: #1aa4c8;
+$button-hover: #0582a2;
+$button-active: #28b7dc;
+$button-focus: #1aa4c8;
+$button-disable: #8cd1e3;
+$secondary: #c1c4cc;
+$semi-secondary: #707070;
+$danger: #de3618;
+$white: #fff;
+$black: #111111;
+$grey: #737888;
+$grey-light: #9e9e9e;
+$grey-smoke: grey;
+$required: #e54848;
+$blue: #0078d7;
+$semi-blue: #026aba;
+$blue-text: #0075c0;
+$hover-bg: #efefef;
+$hover-and-active-bg: #d1e0ff;
+$primary-hover: #0c914e;
+$primary-active: #71d897;
+$secondary-hover: $secondary;
+$secondary-active: #efefef;
+$ms-grey: #f4f5f8;
+$text-min: #5f6368;
+$ms-semi-grey: #d4d7dc;
+$ms-light-grey: #e9ebf1;
+
+$color-error: #ff7777;
+$color-fosus: $primary;
+$color-control-label: #212121;
+$color-bg-grey: #d9d9d9;
+$color-bg-popup: #393a3d;
+
+// Button
+$button-height: 36px;
+$button-icon-height: 28px;
+$button-width: 124px;
+$button-boder-radius: 3px;
+$button-text-padding: 0 16px;
+$button-icon-margin: 0 6px;
+$button-icon-line-height: 24px;
+$button-disable-opacity: 0.56;
+$button-outline: #a6c7ff auto 1px;
+$button-radius: 20px;
+$button-radius-height: 30px;
+
+// Toast
+$toast-info-bg: #e8f5f7;
+$toast-info-icon-bg: $primary;
+$toast-success-bg: #c7f2de;
+$toast-success-icon-bg: #00c853;
+$toast-error-bg: #ffe2e2;
+$toast-error-icon-bg: #e61d1d;
+$toast-warning-bg: #fff4e5;
+$toast-warning-icon-bg: #ff9100;
+
+// primary
+$btn-primary-color: #fff;
+$btn-primary-color: #1aa4c8;
+$btn-primary-hover-bg: #0582a2;
+$btn-primary-active-bg: #28b7dc;
+
+//secodary
+$btn-secodary-border: 1px solid $secondary;
+$btn-secodary-color: #212121;
+$btn-secodary-bg: #ebebeb;
+$btn-secodary-hover-bg: $secondary-active;
+$btn-secodary-active-bg: $secondary-active;
+
+//danger
+$btn-danger-color: $white;
+$btn-danger-bg: #e61d1d;
+$btn-danger-hover-bg: #d81010;
+$btn-danger-active-bg: #c40d0d;
+
+//transparent
+$btn-transparent-color: $primary;
+$btn-transparent-hover-bg: #205cd6;
+$btn-transparent-active-bg: #1650c5;
+
+// scroll
+$scroll-size: 4px;
+$scroll-size-big: 8px;
+$scroll-radius: 2px;
+$scroll-radius-big: 4px;
+$scroll-bg: $white;
+$scroll-color: #cdd3d6;
+$scroll-hover-color: #9e9e9e;
+$scroll-active-color: $grey;

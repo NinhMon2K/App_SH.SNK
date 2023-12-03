@@ -1,0 +1,236 @@
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    text-align: right;
+    margin-bottom: 0;
+    padding-top: 7px;
+  }
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+  right: 15px;
+}
+
+@media (min-width: 768px) {
+  .form-horizontal .form-group-lg .control-label {
+    padding-top: 11px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-horizontal .form-group-sm .control-label {
+    padding-top: 8px;
+    font-size: 12px;
+  }
+}
+.box-header{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    .form-horizontal{
+        display: flex;
+        .form-group__left{
+            margin-right: 10px;
+        }
+    }
+}
+.dashboard-center_container {
+  display: flex;
+}
+.dashboard-notify_table{
+    display: flex;
+    flex-direction: column;
+    .new-response{
+        flex: 1;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        .notify-header{
+            .title{
+                font-weight: 600;
+            }
+        }
+    }
+    .container_table_bottom{
+        display: flex;
+        flex: 1;
+    }
+}
+label {
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.dashboard-header {
+  /*background: #F9FBFF;*/
+  padding: 10px;
+  margin: 0px;
+  font-size: 14px;
+}
+
+.dashboard-header .btn-group {
+  height: 34px;
+  width: 80px;
+}
+
+.dashboard-header #btnSearch {
+  color: #fff;
+  background-color: #286090;
+}
+
+.dashboard-center {
+  background: #f9fbff;
+}
+
+.dashboard-center .col-sm-1 {
+  width: 12.333333% !important;
+  padding: 0px;
+}
+
+.dashboard-center .col-sm-1:hover {
+  cursor: pointer;
+  background-color: antiquewhite;
+  /* background-image: url('../../images/diamond.png');
+            background-repeat: round;*/
+}
+
+.dashboard-center .common {
+  padding: 20px;
+}
+
+.dashboard-center .common .title {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 3px;
+}
+
+.dashboard-center .common .number {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 0;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 3px;
+}
+
+.dashboard-center .common .precent {
+  transition: 0.5s;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.dashboard-center .total-request {
+  border-right: 1px solid #bbccef;
+}
+
+.dashboard-center .new-request {
+  border-right: 1px solid #bbccef;
+  color: #939393;
+}
+
+.dashboard-center .sent-request {
+  border-right: 1px solid #bbccef;
+  color: #ffc107;
+}
+
+.dashboard-center .responseded-request {
+  border-right: 1px solid #bbccef;
+  color: #3b76ef;
+}
+
+.dashboard-center .confirm-request {
+  border-right: 1px solid #bbccef;
+  color: #63c7ff;
+}
+
+.dashboard-center .attached-request {
+  border-right: 1px solid #bbccef;
+  color: #519dbf;
+}
+
+.dashboard-center .cancel-request {
+  border-right: 1px solid #bbccef;
+  color: #f44236;
+}
+
+.dashboard-center .finish-request {
+  color: #14cc9e;
+}
+.item_dashbord {
+  flex: 1;
+  padding: 20px;
+}
+.dashboard-notify {
+  margin-top: 10px;
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  .new-response {
+    flex: 1;
+  }
+  .new-attached {
+    flex: 1;
+  }
+  .new-change {
+    flex: 1;
+  }
+}
+
+.dashboard-notify .new-common {
+  padding: 0px 5px 0px 5px;
+}
+
+.dashboard-notify .new-common .cls-common {
+  border: 1px solid #d0dfff;
+  border-radius: 10px;
+}
+
+.dashboard-notify .row {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.notify-header {
+  height: 50px;
+  background: #f3f3f3;
+  padding: 11px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: solid 1px #ccc ;
+  .title {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4d4f5c;
+  }
+}
+
+.dashboard-notify .row {
+  margin: 18px 0px 18px 0px;
+}
+
+.dashboard-notify .content-response {
+  margin-top: 3px;
+  font-weight: 600;
+  color: #6b90db;
+}
+
+.dashboard-notify .content-response:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dashboard-notify .notify-content {
+  font-size: 13px;
+}
+
+.dashboard-notify .notify-content .icon {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+}

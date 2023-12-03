@@ -1,0 +1,158 @@
+.model {
+    background-color: rgba(0, 0, 0, 0.55) !important;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    .form-asset {
+      position: relative;
+      width: 760px;
+      
+      border-radius: 4px;
+      background-color: #fff;
+      padding-top: 20px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  
+      border-bottom-right-radius: 4px;
+      border-top-left-radius: 4px;
+      .header-popup {
+        display: flex;
+        justify-content: space-between;
+        .form-asset__title {
+          padding-left: 16px;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        .form-asset__close {
+          margin-right: 16px;
+          cursor: pointer;
+        }
+      }
+  
+      .content-popup {
+        padding-bottom: 9px; //24
+        .form-asset__body {
+          padding: 0 16px;
+          display: flex;
+          flex-direction: column;
+          .form_group{
+            width: 67%;
+          }
+          .box__title{
+            font-size: 15px;
+            color: #000;
+            font-weight: 600;
+            margin-top: 20px;
+          }
+          .box__select-form{
+            display: flex;
+            width: 67%;
+            justify-content: space-between;
+            margin: 7px 0 -5px 0;
+            p{
+              font-size: 13px;
+              color: #000;
+              &:last-child{
+                margin-right: 118px;
+              }
+            }
+
+          }
+          .box_select-item{
+            .dialog-update-asset{
+
+              display: flex;
+              flex-direction: column;
+              height: 224px;
+            
+              overflow: auto;
+              flex-wrap: nowrap;
+             
+
+              .source-item{
+                display: flex;
+                width: 100%;
+                margin-bottom: 20px;
+                .form-group{
+                  align-items: center;
+                  position: relative;
+                  display: flex;
+                  width: 67%;
+                  .select--cb{
+                    flex: 1;
+                  }
+                  .price__cb{
+                    width: 174px;
+                    margin-left: 10px;
+                    .ms-number{
+                      .flex-row{
+                        
+                      }
+                    }
+                  }
+                  .dialog-item{
+                   
+                  }
+                }
+                .form_group-btn{
+                  display: flex;
+                  align-items: center;
+                  .box-add{
+                    margin: 0 20px;
+                    .ic-add-border{
+                      cursor: pointer;
+                    }
+                  }
+                  .box-minus{
+                  
+                    .ic-minus-border{
+                      cursor: pointer;
+                    }
+                  }
+                }
+               
+                
+              }
+            }
+          }
+          .form_group--bottom{
+            display: flex;
+            width: 66.6%;
+            .box_sum{
+              flex: 1;
+            }
+            .box_sum-price{
+              width: 174px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .footer-popup {
+        height: 52px;
+        .form-asset__footer {
+          display: flex;
+          justify-content: end;
+          background-color: #E5E5E5;
+          height: 52px;
+          align-items: center;
+          padding: 0 16px;
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+          .btn {
+            min-width: 110px;
+            width: 110px;
+            margin-left: 10px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) ;
+          }
+        }
+      }
+    }
+  }
+  

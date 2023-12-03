@@ -1,0 +1,200 @@
+.model {
+  background-color: rgba(0, 0, 0, 0.55) !important;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  .form-asset {
+    position: relative;
+    width: 850px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding-top: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    .header-popup {
+      display: flex;
+      justify-content: space-between;
+      .form-asset__title {
+        padding-left: 16px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .form-asset__close {
+        margin-right: 16px;
+        cursor: pointer;
+      }
+    }
+
+    .content-popup {
+      padding-bottom: 9px; //24
+      .form-asset__body {
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        .form-group {
+          display: flex;
+          padding-bottom: 20px;
+          .form-group__left {
+            width: 262px;
+            .input-field {
+              margin-bottom: 0;
+            }
+            .ms-number {
+              .flex-row {
+                .input-text {
+                }
+              }
+            }
+          }
+          .form-group__right {
+            display: flex;
+            justify-content: center;
+            padding-left: 16px;
+            flex: 1;
+            .form-group__right__1 {
+              flex: 1;
+            }
+            .right-center {
+              width: 16px;
+            }
+            .form-group__right__2 {
+              flex: 1;
+            }
+            .ms-number:first-child {
+              margin-right: 16px;
+            }
+            .input-date__field {
+            }
+            .ms-number {
+              .flex-row {
+                .input-text {
+                  padding: 0;
+                }
+              }
+            }
+            .input-field {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .footer-popup {
+      height: 52px;
+      .form-asset__footer {
+        display: flex;
+        justify-content: end;
+        background-color: #f5f5f5;
+        height: 52px;
+        align-items: center;
+        padding: 0 16px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        .btn {
+          min-width: 110px;
+          width: 110px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.form-icon--selecte {
+  position: absolute;
+  right: 10px;
+}
+
+.form-icon--candidate {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  right: 8px;
+  // background: url('../../assets/icon/qlts-icon.svg') no-repeat -287px -67px;
+}
+
+.double-input--1-2 {
+  display: grid;
+  grid-template-columns: 33.33% calc(100% - 33.33%);
+  margin-bottom: 16px;
+}
+
+.three-input--1-1-1 {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.34%;
+  margin-bottom: 16px;
+}
+
+.form-asset__icon {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  // background: url('../../assets/icon/qlts-icon.svg') no-repeat -368px -280px;
+  cursor: pointer;
+}
+
+.form-asset__icon:hover {
+  background-color: #afafaf;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.form-asset__footer {
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  // background: url('../../assets/icon/qlts-icon.svg') no-repeat -287px -67px;
+  padding-right: 8px;
+}
+.form-group__right {
+  .ms-number {
+    .flex-row {
+      .input-text {
+        padding: 0;
+      }
+    }
+  }
+}
+.toast-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 3px 0;
+  flex-direction: row-reverse;
+  // background-color: #f5f5f5;
+  .btn {
+    width: 92px;
+    min-width: 92px;
+    &.secodary {
+      border: solid 1px #ccc;
+    }
+    & + .btn {
+      margin-right: 8px;
+    }
+  }
+}
+.form-group__right__1 {
+  .input-date__field {
+    .flex-row {
+      .el-input {
+        .el-input__wrapper {
+          background: #fff url("@/assets/images/icons/datepicker-icon.png")
+            no-repeat 200px 8px !important;
+        }
+      }
+    }
+  }
+}

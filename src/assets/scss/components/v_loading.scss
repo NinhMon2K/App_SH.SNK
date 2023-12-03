@@ -1,0 +1,47 @@
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(88, 85, 85);
+  opacity: 0.5;
+  z-index: 22;
+  .half-circle-spinner,
+  .half-circle-spinner * {
+    box-sizing: border-box;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+  }
+  .half-circle-spinner {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: relative;
+    .circle {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      border-radius: 70%;
+      border: calc(60px / 10) solid transparent;
+    }
+    .circle.circle-1 {
+      border-top-color: #ebebeb;
+      animation: half-circle-spinner-animation 1s infinite;
+    }
+    .circle.circle-2 {
+      border-bottom-color: #ebebeb;
+      animation: half-circle-spinner-animation 1s infinite alternate;
+      -webkit-animation: half-circle-spinner-animation 1s infinite alternate;
+    }
+  }
+}
+@keyframes half-circle-spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
